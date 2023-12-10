@@ -1,0 +1,22 @@
+#include <stdio.h>
+int main() {
+    FILE *fptr;
+    char filename[100],ch;
+    int characters = 0, words = 0;
+    printf("Enter the filename to open: ");
+    scanf("%s", filename);
+    fptr = fopen(filename, "r");
+    if (fptr == NULL) {
+        printf("Error opening file!");
+        return 1;
+    }
+    while ((ch = fgetc(fptr)) != EOF) {
+        characters++;
+        if (ch == ' ' || ch == '\n' || ch == '\t') {
+            words++;
+        }
+    }
+    fclose(fptr);
+    printf("The file %s has %d characters and %d words.\n", filename, characters, words);
+    return 0;
+}

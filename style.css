@@ -32,6 +32,9 @@ header {
     padding: 20px;
     justify-content: center;
 }
+h3 img{
+width:30px
+}
 
 img {
     width: 100%;

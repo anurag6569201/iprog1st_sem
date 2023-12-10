@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Programming Language Images</title>
+</head>
+
+<body>
+    <div id="loader"></div>
+    <header>
+        <h1>Programming Languages</h1>
+    </header>
+
+    <main id="image-container">
+        <!-- Images will be dynamically added here -->
+    </main>
+
+    <div id="modal" class="modal">
+        <span class="close" id="close-modal">&times;</span>
+        <div class="fixture">
+            <div class="modal-content-container">
+                <img id="modal-image" class="modal-content">
+                <button class="nav-btn" id="prev-btn">&lt; Prev</button>
+                <button class="nav-btn" id="next-btn">Next &gt;</button>
+                <div id="caption"></div>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script>
+    const loader = document.getElementById("loader");
+    window.addEventListener('load', () => {
+        setTimeout(() => {
+            loader.style.display = "none";
+        }, 8000);
+    });
+</script>
+
+</html>

@@ -79,6 +79,7 @@ img {
     font-size: 30px;
     color: #fff;
     cursor: pointer;
+    z-index:1000;
 }
 
 .close:hover,

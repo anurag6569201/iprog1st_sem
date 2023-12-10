@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const closeModalButton = document.getElementById("close-modal");
     const prevButton = document.getElementById("prev-btn");
     const nextButton = document.getElementById("next-btn");
-    const totalImages = 73;
+    const totalImages = 78;
     let currentImageIndex = 0;
 
     for (let i = 1; i <= totalImages; i++) {
